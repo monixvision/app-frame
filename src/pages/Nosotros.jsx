@@ -1,6 +1,6 @@
 
 const Nosotros = () => (
-    <section className={styles.hero}>
+    <section>
       <h2>Sobre nosotros</h2>
       <p>Somos un equipo apasionado...</p>
     </section>
