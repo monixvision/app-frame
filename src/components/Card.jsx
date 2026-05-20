@@ -1,6 +1,6 @@
 
-
-const Card = ({ titulo, creacion, genero, imagen, sinopsis, autoria }) => {
+const Card = ({info}) => {
+const {titulo, creacion, genero, imagen, sinopsis, autoria }= info;
   return (
     <div className={styles.card}>
       <img src={imagen} alt={titulo} />
@@ -12,5 +12,7 @@ const Card = ({ titulo, creacion, genero, imagen, sinopsis, autoria }) => {
     </div>
   );
 }
+
+
 
 export default Card;
