@@ -1,11 +1,13 @@
+import styles from './Header.module.css';
+import logoBlanco from '../assets/img/FRAME-logowhite.svg';
+import BottomBar from './BottomBar';
+
 const Header = () => (
-    <header>
-      <h1>FrameApp</h1>
-      <nav>
-        <a href="/">Inicio</a>  
-        <a href="/catalogo">Catálogo</a>
-        <a href="/contacto">Nosotros</a>
-      </nav>
+    <header className="bg-zinc-700 p-2">
+        <a href="/">
+            <img src={logoBlanco} alt="Logo de la empresa" className= {`${styles.cabecera__logo} mx-auto`} />
+        </a>
+        <BottomBar />
     </header>
 );
 
