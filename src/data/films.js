@@ -7,7 +7,8 @@ export const CATALOGO_PELIS = [
     titulo: 'Matrix',
     creacion: 1999,
     genero: 'Realidad virtual',
-    miniatura: peli1,
+    imagen: peli1,
+    autoria: 'Hermanas Wachowski',
     sinopsis: 'Un hacker descubre la realidad...'
   },
   {
@@ -15,7 +16,8 @@ export const CATALOGO_PELIS = [
     titulo: 'Dune',
     creacion: 2021,
     genero: 'Exploración espacial',
-    miniatura: peli2,
+    imagen: peli2,
+    autoria: 'Denis Villeneuve',
     sinopsis: 'Viaje a Arrakis...'
   }
 ];
