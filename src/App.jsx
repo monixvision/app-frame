@@ -1,17 +1,16 @@
-import './App.css'
-import Card from './components/Card'
-import { CATALOGO_PELIS } from './data/films'
+import './App.css';
+import Home from './pages/Home';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
-const App = () => {
-  return (
+const App = () => (
     <>
-      <Card />
-      {CATALOGO_PELIS.map((peli) => (
-        <Card key={peli.id} info={peli} />
-      )
-      )}
+      <Header />
+      <main>
+        <Home />
+      </main>
+      <Footer />
     </>
   )
-}
 
 export default App

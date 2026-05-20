@@ -1,5 +1,5 @@
 const Header = () => (
-    <header className={styles.header}>
+    <header>
       <h1>FrameApp</h1>
       <nav>
         <a href="/">Inicio</a>  
