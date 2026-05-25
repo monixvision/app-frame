@@ -1,4 +1,4 @@
-import{BrowserRouter, Routes, Route} from 'react-router-dom';
+import{BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Footer from './components/Footer';
@@ -9,6 +9,7 @@ import Descargas from './pages/Descargas';
 import Faq from './pages/FAQ';
 import Nosotros from './pages/Nosotros';
 import Entradas from './pages/Entradas';
+import Error404 from './pages/Error404';
 
 const App = () => (
     <BrowserRouter> {/* Esto permite la navegación entre rutas */}
@@ -23,6 +24,9 @@ const App = () => (
           <Route path="/preguntas" element={<Faq />}/>
           <Route path="/nosotros" element={<Nosotros />}/>
           <Route path="/entradas" element={<Entradas />}/>
+          <Route path="/404" element={<Error404 />}/>
+          <Route path="*" element={<Navigate to="/404" replace />}/> 
+          {/* Ruta para cualquier otra ruta no definida y usamos Navigate para redirigir a la página de error */}
         </Routes>
       </main>
       <Footer />
