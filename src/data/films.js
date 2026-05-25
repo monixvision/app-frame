@@ -1,10 +1,10 @@
-import peli1 from '../assets/img/figure-2001.webp';
-import peli2 from '../assets/img/figure-alien.webp';
-import peli3 from '../assets/img/figure-gravity.webp';
-import peli4 from '../assets/img/figure-interestellar.webp';
-import peli5 from '../assets/img/figure-martian.webp';
-import peli6 from '../assets/img/figure-solaris.webp';
-import peli7 from '../assets/img/figure-sunshine.webp';
+import peli1 from '../assets/img/figure_2001.webp';
+import peli2 from '../assets/img/figure_alien.webp';
+import peli3 from '../assets/img/figure_gravity.webp';
+import peli4 from '../assets/img/figure_interestellar.webp';
+import peli5 from '../assets/img/figure_martian.webp';
+import peli6 from '../assets/img/figure_solaris.webp';
+import peli7 from '../assets/img/figure_sunshine.webp';
 
 export const CATALOGO_PELIS = [
   {

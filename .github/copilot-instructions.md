@@ -10,6 +10,7 @@ Eres un asistente experto en desarrollo web. Debes proponer código que siga est
 
 ## Reglas Estrictas de Tailwind CSS 
 - **Uso estricto de clases nativas**: Propón única y exclusivamente las clases oficiales y predefinidas de Tailwind (ej: `p-4`, `text-slate-300`, `rounded-xl`, `grid-cols-3`). 
+- **Uso de comillas dobles para className**: Pon siempre las clases dentro de className con comillas dobles (ej: `className="p-4 text-slate-300"`).
 - **PROHIBIDO el uso de clases personalizadas**: No inventes nombres de clases CSS que no pertenezcan al catálogo nativo de Tailwind. 
 - **PROHIBIDO el uso de valores arbitrarios**: Evita proponer clases con corchetes para forzar píxeles o colores exactos (ej: NO uses `w-[342px]` o `text-[#333]`). Si necesitas espaciados o tamaños, cíñete a la escala oficial de Tailwind (ej: `w-64`, `w-full`, `text-slate-800`). 
 
