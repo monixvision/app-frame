@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+}
