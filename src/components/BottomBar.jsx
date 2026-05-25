@@ -28,5 +28,4 @@ const BottomBar = () => (
     </nav>
     </div>
 );
-
 export default BottomBar;
