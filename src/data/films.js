@@ -9,6 +9,7 @@ import peli7 from '../assets/img/figure_sunshine.webp';
 export const CATALOGO_PELIS = [
   {
     id: 1,
+    dia: 1,
     titulo: '2001: Una odisea del espacio',
     creacion: 1968,
     genero: 'Ciencia ficción',
@@ -18,6 +19,7 @@ export const CATALOGO_PELIS = [
   },
   {
     id: 2,
+    dia: 1,
     titulo: 'Alien',
     creacion: 1979,
     genero: 'Ciencia ficción / Terror',
@@ -27,6 +29,7 @@ export const CATALOGO_PELIS = [
   },
   {
     id: 3,
+    dia: 2,
     titulo: 'Gravity',
     creacion: 2013,
     genero: 'Ciencia ficción / Drama',
@@ -36,6 +39,7 @@ export const CATALOGO_PELIS = [
   },
   {
     id: 4,
+    dia: 2,
     titulo: 'Interstellar',
     creacion: 2014,
     genero: 'Ciencia ficción / Aventura',
@@ -45,6 +49,7 @@ export const CATALOGO_PELIS = [
   },
   {
     id: 5,
+    dia: 3,
     titulo: 'The Martian',
     creacion: 2015,
     genero: 'Aventura / Ciencia ficción',
@@ -54,6 +59,7 @@ export const CATALOGO_PELIS = [
   },
   {
     id: 6,
+    dia: 3,
     titulo: 'Solaris',
     creacion: 1972,
     genero: 'Ciencia ficción / Drama',
@@ -63,6 +69,7 @@ export const CATALOGO_PELIS = [
   },
   {
     id: 7,
+    dia: 3,
     titulo: 'Sunshine',
     creacion: 2007,
     genero: 'Ciencia ficción / Thriller',
