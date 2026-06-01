@@ -9,6 +9,7 @@ import Descargas from './pages/Descargas';
 import Faq from './pages/FAQ';
 import Nosotros from './pages/Nosotros';
 import Entradas from './pages/Entradas';
+import Articulo from './pages/Articulo';
 import Error404 from './pages/Error404';
 
 const App = () => (
@@ -24,6 +25,9 @@ const App = () => (
           <Route path="/preguntas" element={<Faq />}/>
           <Route path="/nosotros" element={<Nosotros />}/>
           <Route path="/entradas" element={<Entradas />}/>
+          <Route path="/articulo/:slug" element={<Articulo />} /> 
+          {/* Ruta dinámica para artículos individuales, el :slug es un parámetro que se puede usar para identificar cada artículo */} 
+          {/* Tiene que tener el mismo nombre que en el componente Card */}
           <Route path="/404" element={<Error404 />}/>
           <Route path="*" element={<Navigate to="/404" replace />}/> 
           {/* Ruta para cualquier otra ruta no definida y usamos Navigate para redirigir a la página de error */}
