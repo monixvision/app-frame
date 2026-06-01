@@ -16,19 +16,58 @@ const Articulo = () => {
     }
 
     // 4. Si la película existe, mostramos su información
-    const {titulo, sinopsis, autoria, creacion, genero, imagen} = peliculas;
+    const { titulo, sinopsis, autoria, creacion, genero, imagen, hora, cine, sala, dia, duracion } = peliculas;
 
     return (
         <article>
-            <h1>{titulo}</h1>
-            <p>{sinopsis}</p>
-            <p>Autoria: {autoria}</p>
-            <p>Creación: {creacion}</p>
-            <p>Género: {genero}</p>
-            <img src={imagen} alt={titulo} />
+            <div className="bg-indigo-600 text-white text-3xl px-3 py-4">
+                <h1>{titulo}</h1>
+            </div>
+            <figure>
+                <img src={imagen} alt={titulo} />
+            </figure>
+            <div className="container mx-auto md:px-4 grid grid-cols-12 gap-4">
+                <div className="col-span-12 md:col-span-7 lg:col-sapn-8 px-3 py-4">
+                    <h2 className="text-2xl">Sinopsis</h2>
+                    <p className="pb-4">{sinopsis}</p>
+                    <div>
+                        <h2 className="text-2xl pb-4">Ficha Técnica</h2>
+                        <ul>
+                            <li className="flex justify-between mb-3 pb-3 border-b">
+                                <span>Autoria</span>  <span>{autoria}</span>
+                            </li>
+                            <li className="flex justify-between mb-3 pb-3 border-b">
+                                <span>Año</span>
+                                <span>{creacion}</span>
+                            </li>
+                            <li className="flex justify-between mb-3 pb-3 border-b">
+                                <span>Duración</span> <span>{duracion}</span>
+                            </li>
+                            <li className="flex justify-between mb-3 pb-3 border-b">
+                                <span>Género</span>
+                                <span>{genero}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <aside className="order-first col-span-12 md:col-sapn-5 md:col-start-8 md:order-last lg:col-sapn-8">{/* etiqueta muy tipica en html y es para elemtnos laterales y el order solo funciona con elementos grid o flex*/}
+                    <div className="bg-indigo-300 px-3 py-4">
+                        <h2 className="text-2xl pb-4">Entradas</h2>
+                        <ul className="flex flex-col gap-4">
+                            <li className="flex justify-between pb-4 border-b">
+                                <span>Día {dia}</span>
+                                <span>Hora {hora}</span>
+                                <span>Sala {sala}</span>
+                                <span>Cine {cine}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
         </article>
     )
 
 
 }
-    export default Articulo;
+export default Articulo;
