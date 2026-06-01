@@ -1,7 +1,8 @@
 import btnMas from '../assets/img/btn-more.svg';
+import { Link } from 'react-router-dom';
 
 const Card = ({ info }) => {
-  const { titulo, imagen, autoria, dia } = info;
+  const { titulo, imagen, autoria, dia, slug } = info;
   return (
     <div className="col-span-6 lg:col-span-4
     flex border-2 border-zinc-700 mb-4 
@@ -17,7 +18,9 @@ const Card = ({ info }) => {
         </div>
         <div className="flex justify-between items-center">
           <p className="text-xs text-white bg-zinc-700 px-4 py-1 rounded-full"> Día {dia}</p>
-          <img src={btnMas} alt="Más información" />
+          <Link to={`/articulo/${slug}`}>
+            <img src={btnMas} alt="Más información" />
+          </Link>
         </div>
       </div>
 
