@@ -1,0 +1,23 @@
+.btn-burguer{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-burguer > *{
+    height: 4px;
+    background-color: white;
+    transition: translate 0.3s ease;
+}
+
+.btn-burguer-cerrado > *:first-child {
+    translate: 0 4px;
+}
+
+.btn-burguer-cerrado > *:last-child {
+    translate: 0 -4px;
+}

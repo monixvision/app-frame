@@ -20,13 +20,25 @@ const Articulo = () => {
 
     return (
         <article>
-            <div className="bg-indigo-600 text-white text-3xl px-3 py-4">
-                <h1>{titulo}</h1>
+            <div style={{ backgroundImage: `url(${imagen})` }} className="h-160 bg-cover bg-center md:h-120">
+                {/* imagen de fondo ponemos el h-160 al tamaño que veamos conveniente creemos que es en rem */}
+
+                {/* 1º div con la imagen rellena todo el espacio */}
+                <div className="flex flex-col justify-end h-full">
+                    {/* 2º div se encarga de coger todo el espacio y con el unico hijo que tiene pegalo a la parte de abajo */}
+
+                    <div className="container mx-auto md:px-4 md:grid grid-cols-12 lg:col-span-8">
+                        {/* 3º div es lo que hace el container para sincronizar con el siguiente y hace grid para contar las mismas columnas que el cuerpo de abajo */}
+                        <div className="col-span-7 bg-indigo-600 text-white text-3xl px-3 py-4">
+                            {/* 4ºdiv ya del contenedor del titulo en color */}
+                            <h1>{titulo}</h1>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <figure>
-                <img src={imagen} alt={titulo} />
-            </figure>
-            <div className="container mx-auto md:px-4 grid grid-cols-12 gap-4">
+
+            <div className="container mx-auto md:px-4 grid grid-cols-12">
                 <div className="col-span-12 md:col-span-7 lg:col-sapn-8 px-3 py-4">
                     <h2 className="text-2xl">Sinopsis</h2>
                     <p className="pb-4">{sinopsis}</p>
