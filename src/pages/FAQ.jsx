@@ -5,4 +5,4 @@ const Faq = () => (
     </section>
  );
 
-export default Faq;
+export default Faq
