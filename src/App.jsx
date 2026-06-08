@@ -6,16 +6,19 @@ import Header from './components/Header';
 import Category from './pages/Category';
 import Actividades from './pages/Actividades';
 import Descargas from './pages/Descargas';
-import Faq from './pages/FAQ';
+import Faq from './pages/Faq';
 import Nosotros from './pages/Nosotros';
 import Entradas from './pages/Entradas';
 import Articulo from './pages/Articulo';
 import Error404 from './pages/Error404';
+import ScrollToTop from './components/routes/ScrollToTop';
 
 const App = () => (
     <BrowserRouter> {/* Esto permite la navegación entre rutas */}
       <Header />
       <main>
+        <ScrollToTop />
+
         <Routes> {/* Aqui se definen las rutas */}
           <Route index element={<Home />} />  {/* Ruta principal */}
           <Route path="/peliculas" element={<Category />}/> 

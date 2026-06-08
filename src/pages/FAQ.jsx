@@ -1,8 +1,9 @@
+import FaqAcordeon from "../components/FaqAcordeon";
+
 const Faq = () => (
-    <section>
-      <h2>FAQ</h2>
-      <p>Encuentra respuestas a las preguntas frecuentes...</p>
+    <section className="container mx-auto p-4">
+      <FaqAcordeon />
     </section>
  );
 
-export default Faq;
+export default Faq
