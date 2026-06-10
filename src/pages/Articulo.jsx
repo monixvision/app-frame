@@ -1,5 +1,6 @@
 import { useParams, Navigate } from 'react-router-dom';
 import { CATALOGO_PELIS } from '../data/films';
+import MoviePosterAPI from '../components/MoviePosterAPI';
 
 
 const Articulo = () => {
@@ -42,6 +43,7 @@ const Articulo = () => {
                 <div className="col-span-12 md:col-span-7 lg:col-sapn-8 px-3 py-4">
                     <h2 className="text-2xl">Sinopsis</h2>
                     <p className="pb-4">{sinopsis}</p>
+                    <MoviePosterAPI movieTitle={titulo} />
                     <div>
                         <h2 className="text-2xl pb-4">Ficha Técnica</h2>
                         <ul>

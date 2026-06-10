@@ -15,8 +15,8 @@ const Category = () => {
   })
 
   return (
-    <div className="container mx-auto p-4 md:grid grid-cols-12 gap-4">
-      <nav className="mb-4 flex gap-4">
+  <div className="container mx-auto p-4">
+  <nav className="mb-4 flex gap-4">
         <button className={`text-xs text-white px-4 py-1 rounded-full ${
           diaSeleccionado === 'all'
             ? 'bg-indigo-700'
@@ -46,6 +46,8 @@ const Category = () => {
         </button>
 
       </nav>
+    <div className="md:grid grid-cols-12 gap-4">
+      
 
       {/* hasta aquí hemos creado el filtro para día 1 */}
 
@@ -55,7 +57,7 @@ const Category = () => {
         <Card key={peli.id} info={peli} />
       ))}
     </div>
-
+</div>
   )
 }
 
