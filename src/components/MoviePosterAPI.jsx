@@ -36,7 +36,7 @@ const MoviePosterAPI = ({ movieTitle }) => {
       } catch (err) {
         setError(true); // Fallo de red o error de API
       } finally {
-        setLoading(false); // Apagamos el estado de carga pase lo que pase
+        setLoading(false); // Apagamos el estado de carga pase lo que pase 
       }
     };
 

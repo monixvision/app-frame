@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import MoviePosterAPI from "../components/MoviePosterAPI";
+import MovieCarousel from "../components/MovieCarousel";
 
 const Home = () => (
 
@@ -15,7 +15,7 @@ const Home = () => (
       {/* para cambiar el css del btn pues simplemente lo contenemos en un div con las propiedades */} 
 
       <Hero />
-      <MoviePosterAPI movieTiTle="Alien" />
+      <MovieCarousel />
     </section>
  );
 
