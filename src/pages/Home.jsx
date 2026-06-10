@@ -15,7 +15,13 @@ const Home = () => (
       {/* para cambiar el css del btn pues simplemente lo contenemos en un div con las propiedades */} 
 
       <Hero />
+      <div className="container mx-auto p-4">
+      <h2 className="text-2xl  font-bold">Cartelera</h2>
+      </div>
+      <div className="container mx-auto md:p-4">
       <MovieCarousel />
+      </div>
+      
     </section>
  );
 
