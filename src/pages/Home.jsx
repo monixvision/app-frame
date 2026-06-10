@@ -15,7 +15,7 @@ const Home = () => (
       {/* para cambiar el css del btn pues simplemente lo contenemos en un div con las propiedades */} 
 
       <Hero />
-      <MoviePosterAPI movieTiTle="Dune" />
+      <MoviePosterAPI movieTiTle="Alien" />
     </section>
  );
 
