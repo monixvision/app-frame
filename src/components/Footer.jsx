@@ -1,6 +1,6 @@
 const Footer = () => (
 
-  <footer className="bg-zinc-700 text-white text-center p-6 mt-8">
+  <footer className="bg-zinc-700 text-white text-center p-6">
     <blockquote className="mb-2 text-xl">
       <p>"La vida es lo que sucede mientras tú estás ocupado haciendo otros planes."</p>
       {/* cambiar las comillas por las otras rollo triangulos << >> */}
