@@ -23,3 +23,5 @@ const FormInput = ({ label, placeholder, variant = 'bordered', ...props }) => {
 }
 
 export default FormInput;
+
+// repasar la grabación pq no me he enterado de nada
