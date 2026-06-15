@@ -1,3 +1,4 @@
+import ContactForms from "../components/forms/ContactForms";
 import Hero from "../components/Hero";
 import MovieCarousel from "../components/MovieCarousel";
 
@@ -21,7 +22,15 @@ const Home = () => (
       <div className="container mx-auto md:p-4">
       <MovieCarousel />
       </div>
-      
+      <div className="bg-indigo-300">
+        <div className="container p-4 mx-auto grid grid-cols-12">
+          <div className="col-span-12 md:col-span6 md:col-start-4">
+            <ContactForms/>
+          </div>
+          
+        </div>
+      </div>
+
     </section>
  );
 
