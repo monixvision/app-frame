@@ -1,5 +1,5 @@
 import FormInput from "./FormInput";
-import Buttom from "../Buttom";
+import Button from "../Button";
 
 const ContactForms = () => (
     <div>
@@ -38,7 +38,7 @@ const ContactForms = () => (
                 <span className="text-xs">Acepto y he leído la política de privacidad.</span>
             </div>
             <div className="my-4 flex justify-end">
-                <Buttom type="submit" text="Enviar"/>
+                <Button type="submit" text="Enviar" />
             </div>
         </form>
     </div>
