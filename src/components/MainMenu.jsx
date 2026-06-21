@@ -9,7 +9,7 @@ const MainMenu = () => (
             <li><Link to='/nosotros'>Nosotros</Link></li>
             <li><Link to='/preguntas'>Ayuda</Link></li>
             <li><Link to='/descargas'>Descargas</Link></li>
-             <li><Link to='/entradas'>Entradas</Link></li>
+            <li><Link to='/entradas'>Entradas</Link></li>
         </ul>
     </nav>
 )
