@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 
-const Button = ({ 
-    text, 
-    variant = 'solid', 
+const Button = ({
+    text,
+    variant = 'solid',
     size = 'lg',
-    to, /* esto es una propiead para que podamos recibir el atributo to con lo que queramos poner */ 
+    to, /* esto es una propiead para que podamos recibir el atributo to con lo que queramos poner */
     ...props }) => {
     /* esto es para crear las variantes como en Figma btn xs o lg - fill o border */
 
@@ -30,17 +30,17 @@ const Button = ({
     const buttonClasses = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]}`;
     /* 4º ahora hay que juntarlo todo en una misma constante */
 
-if(to){
-    return (
-      <Link to={to} className={buttonClasses} {...props}>
-        {text}
-      </Link>
-    );
-}
-/* si llega a to devuelve la etiqueta link si no tiene to pues es un btn normal sin interactividad y tiene que esperar el la ruta a la que quieras llevar */
+    if (to) {
+        return (
+            <Link to={to} className={buttonClasses} {...props}>
+                {text}
+            </Link>
+        );
+    }
+    /* si llega a to devuelve la etiqueta link si no tiene to pues es un btn normal sin interactividad y tiene que esperar el la ruta a la que quieras llevar */
 
     return (
-        <button className={buttonClasses} {...props}> {text} </button> 
+        <button className={buttonClasses} {...props}> {text} </button>
 
     )
 
