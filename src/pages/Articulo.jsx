@@ -1,6 +1,7 @@
 import { useParams, Navigate } from 'react-router-dom';
 import { CATALOGO_PELIS } from '../data/films';
 import MoviePosterAPI from '../components/MoviePosterAPI';
+import Button from '../components/Button';
 
 
 const Articulo = () => {
@@ -77,6 +78,12 @@ const Articulo = () => {
                             </li>
                         </ul>
                     </div>
+                    <Button
+                        to="/Entradas"
+                        text="Entradas"
+                        state={{ preselectedId: peliculas.id, preselectedDia: dia }}
+                    />
+
                 </aside>
             </div>
         </article>
